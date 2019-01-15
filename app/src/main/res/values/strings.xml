@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MoyaTransportes</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Moya Corporation</string>
+    <string name="nav_header_subtitle">moya.mtc@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="txt_client">Cliente</string>
+    <string name="txt_route">Rota</string>
+    <string name="txt_obs">Observação</string>
+    <string name="txt_email_type">Tipo de email</string>
+    <string name="btn_enviar">Enviar</string>
+
+    <string-array name="client_array">
+        <item>HERO</item>
+        <item>SET LOG</item>
+    </string-array>
+</resources>
