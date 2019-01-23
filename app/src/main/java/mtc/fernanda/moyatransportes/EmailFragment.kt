@@ -5,6 +5,10 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import kotlinx.android.synthetic.main.email_content.*
+import android.content.Intent
+import android.net.Uri
+
 
 class EmailFragment : Fragment() {
 
@@ -30,6 +34,25 @@ class EmailFragment : Fragment() {
 //        }
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        btn_enviar.setOnClickListener {
+            testeExecute()
+        }
+    }
+
+    private fun testeExecute(){
+        //EmailService.test(context)
+
+        val emailIntent = Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:feerzinha@gmail.com"))
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "TESTE")
+        emailIntent.putExtra(Intent.EXTRA_TEXT, "Olá")
+//emailIntent.putExtra(Intent.EXTRA_HTML_TEXT, body); //If you are using HTML in your body text
+
+        startActivity(Intent.createChooser(emailIntent, "Chooser Title"))
+    }
+
     companion object {
         fun newInstance() = EmailFragment()
     }
@@ -40,6 +63,9 @@ class EmailFragment : Fragment() {
 //
 //        return binding.root
 //    }
+
+
+
 
 }
 

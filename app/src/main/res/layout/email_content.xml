@@ -55,7 +55,8 @@
             android:id="@+id/etx_route" android:layout_marginTop="10dp"
             app:layout_constraintTop_toBottomOf="@+id/txt_rota" android:layout_marginStart="16dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent" android:autofillHints="" tools:targetApi="o"
+            android:hint="@string/hintt_route"/>
     <TextView
             android:text="@string/txt_obs"
             android:layout_width="wrap_content"
@@ -70,7 +71,8 @@
             android:id="@+id/etx_obs"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
             android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/txt_obs"
-            android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent"/>
+            android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent" android:autofillHints=""
+            tools:targetApi="o" android:hint="@string/hint_obs"/>
     <Button
             android:text="@string/btn_enviar"
             android:layout_width="wrap_content"
