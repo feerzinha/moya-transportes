@@ -11,9 +11,44 @@
     <string name="txt_obs">Observação</string>
     <string name="txt_email_type">Tipo de email</string>
     <string name="btn_enviar">Enviar</string>
+    <string name="hint_obs">Observacão</string>
+    <string name="hint_route">Rota</string>
+
+    <!-- Start of delivery message -->
+    <string name="start_delivery_message">Saída para entrega no(s) seguinte(s) cliente(s): \n %1$s</string>
+
+    <!-- End of delivery message -->
+    <string name="end_delivery_message">Entrega finalizada no(s) seguinte(s) cliente(s): \n %1$s</string>
+
+    <!-- Occurrence during delivery message -->
+    <string name="occurrence_message">Ocorrência(s): \n %1$s</string>
+
+    <string name="obs_message_text">\n\nObservação: %1$s</string>
+    <string name="add_store_image">Adicionar Loja</string>
 
     <string-array name="client_array">
-        <item>HERO</item>
-        <item>SET LOG</item>
+        <item>Kiviks - rafael.correia@hero.com.br</item>
+        <item>SetLog - andressa.santada@hero.com.br</item>
+    </string-array>
+
+    <string-array name="email_type_array">
+        <item>Início da entrega</item>
+        <item>Fim da entrega</item>
+        <item>Ocorrência</item>
+    </string-array>
+
+    <string-array name="store_array">
+        <item>Atilatte</item>
+        <item>CBD</item>
+        <item>Dalben Barão</item>
+        <item>Dalben Mansões</item>
+        <item>Dalben Taquaral</item>
+        <item>Covabra</item>
+        <item>Pague Menos</item>
+        <item>Rubens Lenzi</item>
+        <item>Savenhago Ribeirão Preto</item>
+        <item>Savenhago Araras</item>
+        <item>Set Log</item>
+        <item>Wallmart</item>
     </string-array>
 </resources>

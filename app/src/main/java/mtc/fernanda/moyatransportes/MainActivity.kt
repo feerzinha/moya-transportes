@@ -20,8 +20,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+            openEmailFragment()
         }
 
         val toggle = ActionBarDrawerToggle(
@@ -61,8 +60,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.nav_email -> {
-                val emailFragment = EmailFragment.newInstance()
-                switchToFragment(emailFragment)
+                openEmailFragment()
             }
             R.id.nav_gallery -> {
 
@@ -83,6 +81,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
+    }
+
+    fun openEmailFragment() {
+        val emailFragment = EmailFragment.newInstance()
+        switchToFragment(emailFragment)
     }
 
     fun switchToFragment(fragment: Fragment) {
